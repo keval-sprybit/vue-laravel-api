@@ -18,8 +18,9 @@ class AnimeController extends Controller
     {
         //
         // return Anime::all();
-        // return AnimeResource::collection(Anime::all());
-        return AnimeResource::collection(Anime::paginate(2));
+        return AnimeResource::collection(Anime::all());
+        // return AnimeResource::collection(Anime::paginate(2));
+
 
     }
 

@@ -31,7 +31,8 @@ Route::get('/test', function (Request $request){
 
 });
 
-Route::apiResource('/anime',AnimeController::class)->middleware('auth:sanctum');
+// Route::apiResource('/anime',AnimeController::class)->middleware('auth:sanctum');
+Route::apiResource('/anime',AnimeController::class);
 
 Route::post('/tokens/create', function (Request $request) {
 
