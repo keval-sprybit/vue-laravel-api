@@ -109,5 +109,6 @@ class AnimeController extends Controller
         $anime->delete();
 
         return response("deleted");
+        // return AnimeResource::collection(Anime::all());
     }
 }
